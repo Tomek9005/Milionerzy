@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pomoc"
+    tools:context=".ZapisaneGry" >
+
+    <TextView
+        android:textColor="@android:color/white"
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:text="@string/title_activity_zapisane_gry"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <RadioGroup
+        
+        android:id="@+id/wczytajrg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+
+        <RadioButton
+            android:textColor="@android:color/white"
+            android:id="@+id/wczytaj1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/zapis1"
+            android:checked="true" />
+
+        <RadioButton
+            android:textColor="@android:color/white"
+            android:id="@+id/wczytaj2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/zapis2" />
+
+        <RadioButton
+            android:textColor="@android:color/white"
+            android:id="@+id/wczytaj3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/zapis3" />
+	</RadioGroup>
+
+    <Button
+        android:id="@+id/wczytajok"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="34dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="@string/ok" />
+
+</RelativeLayout>
